@@ -1,0 +1,54 @@
+{
+  "name": "@buihongduc132/rpiv-btw",
+  "version": "1.2.0",
+  "description": "Pi extension: /btw side-question slash command with context budget — ask the same primary model a one-off side question without polluting the main conversation",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "rpiv",
+    "btw",
+    "side-question",
+    "overlay",
+    "context-budget"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "author": "juicesharp (original), buihongduc132 (context-budget fork)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buihongduc132/rpiv-btw.git"
+  },
+  "homepage": "https://github.com/buihongduc132/rpiv-btw#readme",
+  "bugs": {
+    "url": "https://github.com/buihongduc132/rpiv-btw/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "vitest run"
+  },
+  "files": [
+    "index.ts",
+    "btw.ts",
+    "btw-context-budget.ts",
+    "btw-ui.ts",
+    "prompts/",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "devDependencies": {
+    "@mariozechner/pi-ai": "^0.73.1",
+    "vitest": "^3.2.4"
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-ai": "*",
+    "@mariozechner/pi-coding-agent": "*",
+    "@mariozechner/pi-tui": "*"
+  }
+}
